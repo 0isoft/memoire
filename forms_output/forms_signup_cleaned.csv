@@ -1,0 +1,61 @@
+PID,group,signup_group,program_length,has_program_info,is_study_participant,group_mismatch_signup_vs_program,age,postpartum_weeks,children_count,delivery_mode,tear_grade,status
+2334,A,A,12.0,True,True,False,32.0,12.0,1.0,Voie basse,Non,En cours
+2500,A,A,7.0,True,True,False,29.0,13.0,1.0,Voie basse,Episiotomie,Validé
+3401,A,A,8.0,True,True,False,36.0,37.0,4.0,Voie basse,Non,En cours
+3476,A,A,7.0,True,True,False,28.0,11.0,1.0,Voie basse,Grade 1,En cours
+4704,A,A,8.0,True,True,False,31.0,8.0,3.0,Voie basse,Grade 1,Info ?
+6205,A,A,6.0,True,True,False,34.0,3.0,1.0,Voie basse,Grade 2,Validé
+6487,A,A,6.0,True,True,False,37.0,27.0,4.0,Voie basse,Grade 1,Validé
+6509,A,,7.0,True,True,False,38.0,11.0,2.0,Voie basse,Grade 2,Validé
+6557,A,A,6.0,True,True,False,39.0,13.0,,Césarienne d'urgence,Non,Validé
+6841,A,A,7.0,True,True,False,31.0,3.0,2.0,Voie basse,Non,En cours
+7050,A,A,8.0,True,True,False,3.0,3.0,1.0,Voie basse,Non,En cours
+8441,A,A,8.0,True,True,False,37.0,22.0,1.0,Voie basse,Non,En cours
+9246,A,A,7.0,True,True,False,39.0,8.0,2.0,Voie basse,Grade 2,En cours
+9884,A,A,7.0,True,True,False,34.0,15.0,1.0,Césarienne d'urgence,Non,En cours
+1550,B,B,10.0,True,True,False,38.0,8.0,1.0,Césarienne élective,Non,En cours
+2729,B,B,10.0,True,True,False,35.0,8.0,1.0,Césarienne d'urgence,Non,Validé
+3357,B,B,10.0,True,True,False,33.0,18.0,2.0,Voie basse,Grade 1,A : Enfant hospitalisé
+3693,B,B,10.0,True,True,False,30.0,30.0,1.0,Voie basse,Grade 1,Validé
+5579,B,B,10.0,True,True,False,36.0,40.0,2.0,Voie basse,Non,A : Enfant hospitalisé
+5801,B,B,6.0,True,True,False,32.0,3.0,1.0,Césarienne d'urgence,Non,Validé
+6018,B,B,10.0,True,True,False,35.0,5.0,3.0,Voie basse,Grade 1,Info ?
+6302,B,B,10.0,True,True,False,33.0,4.0,2.0,Voie basse,Non,Validé
+6845,B,B,7.0,True,True,False,35.0,15.0,1.0,Voie basse,Grade 2,Validé
+6961,B,B,10.0,True,True,False,28.0,22.0,2.0,Voie basse,Grade 1,A : Manque de temps
+7072,B,B,10.0,True,True,False,36.0,10.0,3.0,Voie basse,Grade 1,Validé
+8865,B,B,7.0,True,True,False,36.0,6.0,1.0,Voie basse,Grade 2,Validé
+9909,B,B,7.0,True,True,False,33.0,4.0,2.0,Voie basse,Non,Info ?
+9921,B,B,10.0,True,True,False,33.0,21.0,1.0,Voie basse,Non,Validé
+1113,,,,False,False,False,32.0,23.0,2.0,Voie basse,Non,E : Critère principale validé
+1115,,,,False,False,False,34.0,17.0,1.0,Voie basse,Grade 1,E : CI médicale
+1116,,,,False,False,False,41.0,20.0,2.0,Voie basse,Grade 1,E : Critère principale validé
+1117,,,,False,False,False,30.0,24.0,2.0,Voie basse,Grade 1,E : CI médicale
+1119,,,,False,False,False,32.0,17.0,2.0,Voie basse,Non,E : Critère principale validé
+1450,,,,False,False,False,36.0,41.0,1.0,Voie basse,Grade 1,E : Critère principale validé
+1753,,,,False,False,False,37.0,7.0,1.0,Voie basse,Grade 2,E : CI médicale
+2382,,,,False,False,False,47.0,21.0,1.0,Voie basse,Grade 1,E : CI médicale
+2436,,,,False,False,False,28.0,5.0,1.0,Voie basse,Grade 1,E : Ne peut pas réaliser l'étude dans les temps
+2629,,,,False,False,False,36.0,10.0,1.0,Voie basse,Non,E : Critère principale validé
+2900,,,,False,False,False,38.0,10.0,1.0,Voie basse,Grade 1,E : Critère principale validé
+3495,,,,False,False,False,29.0,9.0,1.0,Voie basse,Grade 1,E : Ne peut pas réaliser l'étude dans les temps
+3794,,,,False,False,False,36.0,0.0,1.0,Voie basse,Grade 2,E : CI médicale
+4660,,,,False,False,False,28.0,32.0,1.0,Voie basse,Grade 2,E : Ne peut pas réaliser l'étude dans les temps
+5332,,,,False,False,False,29.0,22.0,1.0,Voie basse,Non,E : Ne peut pas réaliser l'étude dans les temps
+5408,,,,False,False,False,37.0,4.0,2.0,Voie basse,Non,E : Ne peut pas réaliser l'étude dans les temps
+5411,,,,False,False,False,32.0,27.0,2.0,Voie basse,Non,E : Ne peut pas réaliser l'étude dans les temps
+6263,,,,False,False,False,31.0,38.0,2.0,Voie basse,Grade 2,E : CI médicale
+6732,,,,False,False,False,29.0,14.0,1.0,Voie basse,Non,E : Ne peut pas réaliser l'étude dans les temps
+7056,,,,False,False,False,28.0,1.0,1.0,Voie basse,Grade 1,E : CI médicale
+7457,,,,False,False,False,32.0,5.0,2.0,Voie basse,Grade 1,E : Ne peut pas réaliser l'étude dans les temps
+7838,,,,False,False,False,34.0,15.0,1.0,Voie basse,Grade 1,E : Ne peut pas réaliser l'étude dans les temps
+8073,,,,False,False,False,33.0,7.0,1.0,Voie basse,Non,E : Ne peut pas réaliser l'étude dans les temps
+8206,,,,False,False,False,31.0,40.0,1.0,Voie basse,Grade 2,E : CI médicale
+8542,,,,False,False,False,29.0,14.0,1.0,Voie basse,Non,E : CI médicale
+8667,,,,False,False,False,33.0,4.0,1.0,Voie basse,Grade 1,E : Ne peut pas réaliser l'étude dans les temps
+8920,,,,False,False,False,35.0,40.0,1.0,Voie basse,Non,E : Ne peut pas réaliser l'étude dans les temps
+8982,,,,False,False,False,38.0,4.0,2.0,Voie basse,Grade 1,E : Ne peut pas réaliser l'étude dans les temps
+9038,,,,False,False,False,32.0,22.0,1.0,Voie basse,Episiotomie,E : Ne peut pas réaliser l'étude dans les temps
+9140,,,,False,False,False,36.0,25.0,2.0,Voie basse,Non,E : Ne peut pas réaliser l'étude dans les temps
+9310,,,,False,False,False,35.0,11.0,1.0,Voie basse,Grade 1,E : CI médicale
+9462,,,,False,False,False,36.0,18.0,2.0,Voie basse,Grade 2,E : Critère principale validé

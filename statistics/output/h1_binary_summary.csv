@@ -1,0 +1,7 @@
+section,variable,n_valid,n_true,percent_true
+H1 feasibility,has_weekly_forms,28,28,100.0
+H1 feasibility,completed_by_forms,28,9,32.142857142857146
+H1 feasibility,has_final_feedback,28,26,92.85714285714286
+H1 feasibility,has_garmin_data,28,15,53.57142857142857
+H1 issues,any_reported_issue,28,7,25.0
+H1 issues,safety_advice_clear,26,23,88.46153846153845

@@ -1,0 +1,54 @@
+Garmin A/B Group Performance Report
+===================================
+
+Dataset and assumptions
+-----------------------
+Input file: all-sessions-cleaned.csv
+The analysis uses all-sessions-cleaned.csv, i.e. Garmin sessions already marked as suitable for analysis.
+Sessions are normalized to program progression using the available week alignment in the dataset.
+For this analysis, first Garmin date is accepted as a valid proxy for program start based on study oversight.
+Performance is summarized at participant-week level before group comparison, avoiding raw session-level over-weighting.
+
+Sample size
+-----------
+Clean session rows: 209
+Participant-week rows: 74
+Participants with usable Garmin data: 15
+
+Participants by group
+---------------------
+group
+A    10
+B     5
+
+Group summary
+-------------
+       n_participants  median_max_weekly_best  q1_max_weekly_best  q3_max_weekly_best  mean_max_weekly_best  median_typical_weekly_best  median_last_weekly_best  reached_30min_rate  median_weeks_with_garmin  median_total_sessions  median_total_distance_km
+group                                                                                                                                                                                                                                                          
+A                  10                  21.858              14.896              26.034                20.572                      14.058                   21.858                 0.2                       5.5                   10.5                    34.209
+B                   5                  25.117              25.000              26.583                25.120                      11.967                   23.333                 0.2                       6.0                   20.0                    72.549
+
+Mann-Whitney group comparisons
+------------------------------
+                  outcome  A_median  B_median  A_n  B_n  p_mannwhitney
+   garmin_max_weekly_best   21.8585    25.117   10    5         0.3710
+garmin_median_weekly_best   14.0585    11.967   10    5         0.8591
+  garmin_last_weekly_best   21.8585    23.333   10    5         0.9530
+ garmin_total_distance_km   34.2090    72.549   10    5         0.5941
+      n_weeks_with_garmin    5.5000     6.000   10    5         0.6195
+    garmin_total_sessions   10.5000    20.000   10    5         0.8044
+
+30-minute threshold comparison
+------------------------------
+Reached 30 min Fisher exact test:
+reached_30min_ever  False  True 
+group                           
+A                       8      2
+B                       4      1
+odds ratio = 1.000, p = 1.0000
+
+Interpretation notes
+--------------------
+The main Garmin outcome should be interpreted as objective performance among participants with usable Garmin data, not necessarily as a perfect estimate of all randomized participants.
+Median participant-level and participant-week metrics are preferred over raw means because Garmin data are sparse, repeated, and sensitive to outliers.
+If group B appears stronger than expected, this should be checked against Garmin coverage, number of sessions, and participant-level distributions rather than interpreted directly from raw averages.

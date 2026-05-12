@@ -1,0 +1,9 @@
+group,status,n
+A,En cours,8
+A,Validé,5
+A,Info ?,1
+B,Validé,8
+B,A : Enfant hospitalisé,2
+B,Info ?,2
+B,A : Manque de temps,1
+B,En cours,1

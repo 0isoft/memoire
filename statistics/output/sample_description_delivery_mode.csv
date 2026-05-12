@@ -1,0 +1,6 @@
+group,delivery_mode,n
+A,Voie basse,12
+A,Césarienne d'urgence,2
+B,Voie basse,11
+B,Césarienne d'urgence,2
+B,Césarienne élective,1

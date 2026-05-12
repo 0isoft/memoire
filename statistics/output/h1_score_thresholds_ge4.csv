@@ -1,0 +1,11 @@
+variable,n_valid,n_at_least_threshold,percent_at_least_threshold,threshold
+clarity_mean,28,24,85.71428571428571,4
+intensity_respected_mean,28,16,57.14285714285714,4
+satisfaction_mean,28,18,64.28571428571429,4
+confidence_mean,28,23,82.14285714285714,4
+recommendation_mean,28,25,89.28571428571429,4
+mean_final_score,26,22,84.61538461538461,4
+global_use_score,26,25,96.15384615384616,4
+process_score,26,24,92.3076923076923,4
+confidence_score,26,19,73.07692307692307,4
+recommendation_score,26,23,88.46153846153845,4

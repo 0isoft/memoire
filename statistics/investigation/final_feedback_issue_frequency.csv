@@ -1,0 +1,8 @@
+issue_column,issue_label,n_total_feedback,n_valid,n_reported,percent_of_feedback_participants,percent_of_valid
+issue_functional_tests,Tests fonctionnels,26,25,4,15.384615384615385,16.0
+issue_criteria,Critères,26,26,3,11.538461538461538,11.538461538461538
+issue_test_ease,Facilité des tests,26,26,2,7.6923076923076925,7.6923076923076925
+issue_program_choice,Choix du programme,26,26,2,7.6923076923076925,7.6923076923076925
+issue_characteristics,Caractéristiques,26,26,1,3.8461538461538463,3.8461538461538463
+issue_symptoms,Symptômes,26,26,1,3.8461538461538463,3.8461538461538463
+issue_contraindications,Contre-indications,26,26,0,0.0,0.0

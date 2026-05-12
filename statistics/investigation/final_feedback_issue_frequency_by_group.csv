@@ -1,0 +1,15 @@
+group,issue_column,issue_label,n_feedback_group,n_valid,n_reported,percent_of_group_feedback,percent_of_valid
+A,issue_characteristics,Caractéristiques,13,13,1,7.6923076923076925,7.6923076923076925
+B,issue_characteristics,Caractéristiques,13,13,0,0.0,0.0
+A,issue_contraindications,Contre-indications,13,13,0,0.0,0.0
+B,issue_contraindications,Contre-indications,13,13,0,0.0,0.0
+A,issue_criteria,Critères,13,13,1,7.6923076923076925,7.6923076923076925
+B,issue_criteria,Critères,13,13,2,15.384615384615385,15.384615384615385
+A,issue_functional_tests,Tests fonctionnels,13,13,2,15.384615384615385,15.384615384615385
+B,issue_functional_tests,Tests fonctionnels,13,12,2,15.384615384615385,16.666666666666664
+A,issue_program_choice,Choix du programme,13,13,1,7.6923076923076925,7.6923076923076925
+B,issue_program_choice,Choix du programme,13,13,1,7.6923076923076925,7.6923076923076925
+A,issue_symptoms,Symptômes,13,13,1,7.6923076923076925,7.6923076923076925
+B,issue_symptoms,Symptômes,13,13,0,0.0,0.0
+A,issue_test_ease,Facilité des tests,13,13,2,15.384615384615385,15.384615384615385
+B,issue_test_ease,Facilité des tests,13,13,0,0.0,0.0

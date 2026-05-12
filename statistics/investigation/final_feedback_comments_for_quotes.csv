@@ -1,0 +1,18 @@
+PID,group,program_length,mean_final_score,global_use_score,process_score,confidence_score,recommendation_score,n_reported_issues,any_reported_issue,combined_comment,issue_contraindications,issue_functional_tests,issue_characteristics,issue_criteria,issue_symptoms,issue_test_ease,issue_program_choice
+3476,A,7,4.75,4.0,5.0,5.0,5.0,5.0,True,"free_comment: Running Woman, Activité physique à impact, prolapsus",False,True,True,True,True,True,False
+6509,A,7,4.5,4.0,4.0,5.0,5.0,2.0,True,"free_comment: Je trouve que les « X » et les « V » ne sont pas très clair dans la présentation de l’algorithme, cela m’a induit en erreur dans le choix de mon programme. Le Running Woman est difficile à comprendre.
+Merci pour ce beau boulot :)",False,True,False,False,False,False,True
+3693,B,10,4.5,4.0,5.0,4.0,5.0,2.0,True,"free_comment: Je n'ai pas très bien compris comment effectuer le test du Running woman, et je n'ai pas vue les critères.",False,True,False,True,False,False,False
+5579,B,10,2.75,5.0,2.0,2.0,2.0,1.0,True,"free_comment: L'arbre n'était pas adapté à mes capacités, et le programme a été déterminé par un professionnel de santé",False,False,False,False,False,False,True
+6961,B,10,4.0,4.0,4.0,3.0,5.0,1.0,True,free_comment: Manque de visibilité au niveau des critères.,False,False,False,True,False,False,False
+2500,A,7,4.5,5.0,5.0,3.0,5.0,1.0,True,free_comment: Cela m'a tout de même rassuré de pouvoir en discuter avec la kiné après avoir suivi l'arbre décisionnel pour valider le processus avec un professionnel de la santé.,False,False,False,False,False,True,False
+3357,B,10,4.75,4.0,5.0,5.0,5.0,1.0,True,free_comment: La partie sur les 20 semaines d’aménorrhée pas claire si on était pas des coureuses avant de tomber enceinte. Le test du Running Woman n'était vraiment pas claire.,False,True,False,False,False,False,False
+6841,A,7,3.5,3.0,4.0,3.0,4.0,0.0,False,free_comment: Plus de clarete dans les oui et non et mettre les critères descisionels dans les cases,False,False,False,False,False,False,False
+9909,B,7,3.5,4.0,4.0,3.0,3.0,0.0,False,"free_comment: Je crois que j'aurai été plus à l'aise de faire les exercices avec vous, pour être certaine de les faire correctement, rigoureusement, pour pouvoir poser mes questions,... une première seance en face à face m'aurait plu.",False,False,False,False,False,False,False
+5801,B,6,4.25,5.0,3.0,4.0,5.0,0.0,False,"free_comment: Ayant effectué le programme de la clinique du coureur en 6 semaines, il me semble que la reprise en 12 semaines comme me l’aurait indiqué l’arbre décisionnel n’aurait peut être pas été tout à fait adaptée pour moi. Mentalement je sais qu’il aurait été difficile pour moi qui ait fait du sport jusqu’aux derniers jours avant accouchement de reprendre si doucement. Peut-être que cela aurait été plus adapté par rapport à ma césarienne mais n’ayant pas eu de douleurs + un suivi kiné en parallèle je trouve que le programme sur 6 semaines était super pour ma personne par rapport à mes habitudes et ma récupération.",False,False,False,False,False,False,False
+2729,B,10,4.5,4.0,4.0,5.0,5.0,0.0,False,"free_comment: je n'avais pas compris que je devais compléter toute une semaine avant de passer à la semaine suivante, je pensais que seulement deux séances sur la semaine suffisait. J'ai donc été trop vite au début le temps de comprendre ce qui était un peu difficile !
+
+binary_field_comments: j'ai eu du mal à comprendre running woman
+
+issue_functional_tests_comment: j'ai eu du mal à comprendre running woman",False,,False,False,False,False,False
+6845,B,7,4.75,4.0,5.0,5.0,5.0,0.0,False,free_comment: Merci ☺️,False,False,False,False,False,False,False
