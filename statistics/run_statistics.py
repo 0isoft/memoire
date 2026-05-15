@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from scipy.stats import mannwhitneyu, fisher_exact
+from scipy.stats import mannwhitneyu, fisher_exact      
 
 
 # ============================================================
@@ -873,7 +873,7 @@ def generate_markdown_report(
         "Group comparisons should be interpreted cautiously due to small sample size. "
         "Effect direction and magnitude are more informative than p-values alone."
     )
-    lines.append("")
+    lines.append("")        
 
     return "\n".join(lines)
 
