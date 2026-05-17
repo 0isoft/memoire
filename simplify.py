@@ -239,50 +239,54 @@ def load_weekly_normalized(path, df_program):
         & (out["week"] <= out["program_length"])
     ].copy()
 
-    # ------------------------------------------------------------
-    # Important choice:
-    # If multiple forms exist for the same PID/week,
-    # average them first so that one week does not overweight the result.
-    # ------------------------------------------------------------
     weekly_cols = list(WEEKLY_SCORE_COLUMNS.keys())
 
+    # ------------------------------------------------------------
+    # If multiple forms exist for the same PID/week,
+    # average them first.
+    # This prevents duplicate forms from overweighting one week.
+    # ------------------------------------------------------------
     pid_week = (
         out.groupby(["PID", "week"], as_index=False)[weekly_cols]
         .mean()
     )
 
-    # Count unique weeks with at least one form
+    # Number of unique weeks with a form
     n_weeks_reported = (
         pid_week.groupby("PID")["week"]
         .nunique()
         .reset_index(name="n_formulaires_suivi")
     )
 
-    # Sum weekly scores across reported weeks
-    sums = (
+    # ------------------------------------------------------------
+    # Correct satisfaction/adherence score:
+    # average over submitted weeks only.
+    #
+    # This answers:
+    # "When the participant filled the weekly form,
+    # how positive was her answer on average?"
+    # ------------------------------------------------------------
+    means = (
         pid_week.groupby("PID")[weekly_cols]
-        .sum(min_count=1)
+        .mean()
         .reset_index()
     )
 
-    # Merge denominator = total program length
-    sums = sums.merge(df_program[["PID", "program_length"]], on="PID", how="left")
-    sums = sums.merge(n_weeks_reported, on="PID", how="left")
+    # Add program length and number of submitted weeks
+    means = means.merge(df_program[["PID", "program_length"]], on="PID", how="left")
+    means = means.merge(n_weeks_reported, on="PID", how="left")
 
     # ------------------------------------------------------------
-    # User-requested normalization:
-    # score = sum of weekly Likert values / total number of program weeks
+    # Follow-up completion:
+    # number of submitted weeks / total expected program weeks.
     #
-    # Missing weekly forms therefore lower the normalized score.
+    # This is the variable that should penalize missing forms.
     # ------------------------------------------------------------
-    for col in weekly_cols:
-        sums[col] = sums[col] / sums["program_length"]
-
-    sums["completion_suivi"] = (
-        sums["n_formulaires_suivi"] / sums["program_length"]
+    means["completion_suivi"] = (
+        means["n_formulaires_suivi"] / means["program_length"]
     )
 
-    return sums[
+    return means[
         [
             "PID",
             "seances",
@@ -295,8 +299,6 @@ def load_weekly_normalized(path, df_program):
             "completion_suivi",
         ]
     ]
-
-
 # ============================================================
 # 4. ALGORITHM PROCESS FEEDBACK
 # ============================================================
@@ -481,32 +483,33 @@ def build_reduced_table():
 
     # Final column order: only what you requested
     final = final[
-        [
-            "PID",
-            "age",
-            "postpartum_weeks",
-            "children_count",
-            "statut",
+    [
+        "PID",
+        "group",
+        "age",
+        "postpartum_weeks",
+        "children_count",
+        "statut",
 
-            # Adhesion et Satisfaction — JDB / weekly normalized
-            "seances",
-            "clarite",
-            "respect_consignes",
-            "satisfaction_seance",
-            "confiance",
-            "recommandation",
-            "n_formulaires_suivi",
-            "completion_suivi",
+        # Adhesion et Satisfaction — JDB / weekly averages
+        "seances",
+        "clarite",
+        "respect_consignes",
+        "satisfaction_seance",
+        "confiance",
+        "recommandation",
+        "n_formulaires_suivi",
+        "completion_suivi",
 
-            # Avis sur l'algorithme
-            "satisfaction_generale_algorithme",
-            "nombre_problemes_algorithme",
+        # Avis sur l'algorithme
+        "satisfaction_generale_algorithme",
+        "nombre_problemes_algorithme",
 
-            # Nolio
-            "nombre_sessions_nolio",
-            "reached_30min_ever",
-        ]
-    ].sort_values("PID")
+        # Nolio
+        "nombre_sessions_nolio",
+        "reached_30min_ever",
+    ]
+].sort_values("PID")
 
     return final
 
