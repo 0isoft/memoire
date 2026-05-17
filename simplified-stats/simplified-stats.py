@@ -10,7 +10,7 @@ from scipy.stats import mannwhitneyu, fisher_exact
 # CONFIG
 # ============================================================
 
-INPUT_CSV = "participant_table.csv"
+INPUT_CSV = "final-final.csv"
 
 OUTPUT_DIR = "statistics_output"
 PLOTS_DIR = os.path.join(OUTPUT_DIR, "plots")
@@ -277,7 +277,42 @@ for var in CONTINUOUS_VARIABLES:
     plt.scatter(x_a, a, alpha=0.7)
     plt.scatter(x_b, b, alpha=0.7)
 
-    plt.title(var)
+    if var == "seances":
+        plot_title = "Réalisation des séances prévues"
+
+    elif var == "clarite":
+        plot_title = "Clarté des explications"
+
+    elif var == "respect_consignes":
+        plot_title = "Respect de l'intensité et des consignes"
+
+    elif var == "satisfaction_seance":
+        plot_title = "Satisfaction des séances"
+
+    elif var == "confiance":
+        plot_title = "Confiance pour poursuivre le programme"
+
+    elif var == "recommandation":
+        plot_title = "Recommandation des séances à une amie"
+
+    elif var == "completion_suivi":
+        plot_title = "Taux de complétion du suivi"
+
+    elif var == "satisfaction_generale_algorithme":
+        plot_title = "Satisfaction générale vis-à-vis de l'algorithme"
+
+    elif var == "nombre_problemes_algorithme":
+        plot_title = "Nombre de problèmes rapportés avec l'algorithme"
+
+    elif var == "nombre_sessions_nolio":
+        plot_title = "Nombre de sessions Nolio valides"
+
+    else:
+        plot_title = var
+
+    plt.title(plot_title)
+    plt.xlabel("Groupe")
+    plt.ylabel(plot_title)
     plt.xlabel("Group")
     plt.ylabel(var)
     plt.grid(axis="y", alpha=0.3)
@@ -318,16 +353,39 @@ for var in BINARY_VARIABLES:
 
     plt.bar(["A", "B"], percentages)
 
-    plt.title(var)
-    plt.xlabel("Group")
-    plt.ylabel("% True")
+
+    if var == "reached_30min_ever":
+        plt.title("Courir pendant 30 min")
+        file_name = "barplot_course_30_min.png"
+
+    elif var == "completion_suivi_ge80":
+        plt.title("Taux de complétion du suivi ≥ 80 %")
+        file_name = "barplot_completion_suivi_80_pourcent.png"
+
+    elif var == "satisfaction_seance_ge4":
+        plt.title("Satisfaction des séances ≥ 4")
+        file_name = "barplot_satisfaction_seances_ge4.png"
+
+    elif var == "satisfaction_algorithme_ge4":
+        plt.title("Taux de satisfaction générale (réponses ≥ 4)")
+        file_name = "barplot_taux_satisfaction_generale_ge4.png"
+
+    elif var == "any_algorithm_problem":
+        plt.title("Au moins un problème rapporté avec l'algorithme")
+        file_name = "barplot_probleme_algorithme.png"
+
+    else:
+        plt.title(var)
+        file_name = f"barplot_{var}.png"
+
+    plt.xlabel("Groupe")
+    plt.ylabel("% de participantes")
     plt.ylim(0, 100)
     plt.grid(axis="y", alpha=0.3)
 
     plt.tight_layout()
 
-    safe_name = var.replace(" ", "_").replace("/", "_")
-    plot_path = os.path.join(PLOTS_DIR, f"barplot_{safe_name}.png")
+    plot_path = os.path.join(PLOTS_DIR, file_name)
 
     plt.savefig(plot_path, dpi=300)
     plt.close()
